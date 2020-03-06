@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://fdmsvrsenior213:8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex?xsd=1" uri="wsdl/fdmsvrsenior213_8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex.xsd_1.xsd"/>
+    <system systemId="http://fdmsvrsenior213:8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex?wsdl" uri="wsdl/fdmsvrsenior213_8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex.wsdl"/>
+    <system systemId="http://172.28.200.22:8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex?wsdl" uri="wsdl/172.28.200.22_8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex.wsdl"/>
+    <system systemId="http://172.28.200.22:8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex?xsd=1" uri="wsdl/172.28.200.22_8080/g5-senior-services/ronda_Synccom_senior_g5_rh_hr_apuracaoPontoFlex.xsd_1.xsd"/>
+</catalog>

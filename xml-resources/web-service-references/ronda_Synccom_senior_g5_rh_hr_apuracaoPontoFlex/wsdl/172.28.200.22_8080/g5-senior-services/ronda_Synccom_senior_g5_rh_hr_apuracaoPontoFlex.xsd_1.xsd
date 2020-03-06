@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.senior.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.senior.com.br">
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoIn">
+<xs:sequence>
+<xs:element name="codCal" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipCol" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOut">
+<xs:sequence>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="TApuracaoPonto" type="tns:apuracaoPontoFlexapuracaoPontoOutTApuracaoPonto" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="TColaborador" type="tns:apuracaoPontoFlexapuracaoPontoOutTColaborador" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="TEmpregador" type="tns:apuracaoPontoFlexapuracaoPontoOutTEmpregador" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="THorarios" type="tns:apuracaoPontoFlexapuracaoPontoOutTHorarios" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="TTotalSituacoes" type="tns:apuracaoPontoFlexapuracaoPontoOutTTotalSituacoes" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOutTApuracaoPonto">
+<xs:sequence>
+<xs:element name="datApu" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="diaSem" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="horDat" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="horMar" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="salBco" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totAtr" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totExc" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totFal" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOutTColaborador">
+<xs:sequence>
+<xs:element name="datAdm" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="nomCcu" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="nomFun" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numCtp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numPis" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="serCtp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="supPro" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipSal" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="titRed" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOutTEmpregador">
+<xs:sequence>
+<xs:element name="endRua" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="estCid" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="nomCid" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCgc" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="razSoc" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOutTHorarios">
+<xs:sequence>
+<xs:element name="codHor" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="horMar" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexapuracaoPontoOutTTotalSituacoes">
+<xs:sequence>
+<xs:element name="salAnt" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="salBco" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totAtr" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totExc" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totFal" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totHE100" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totHE100Not" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totHE50" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totHE50Not" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totNot" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="totPag" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexBuscaCalculosPorColaboradorIn">
+<xs:sequence>
+<xs:element name="filtroFimCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="filtroIniCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="retornaCalcCancelado" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="retornaCalcInicializado" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="retornaCalcParcial" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="retornaCalcTotal" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipCol" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexBuscaCalculosPorColaboradorOut">
+<xs:sequence>
+<xs:element name="calculos" type="tns:apuracaoPontoFlexBuscaCalculosPorColaboradorOutCalculos" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apuracaoPontoFlexBuscaCalculosPorColaboradorOutCalculos">
+<xs:sequence>
+<xs:element name="codCal" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="datPag" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desTip" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="fimCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="iniCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="perRef" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="tipCal" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

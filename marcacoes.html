@@ -1,0 +1,19 @@
+				<tr>
+					<td style="padding:3px" width="" nowrap ><div align="left"><font color="#000" size="2" face="Trebuchet MS">@@@DATA@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="left"><font color="#000" size="2" face="Trebuchet MS">@@@SEMANA@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="left"><font color="#000" size="2" face="Trebuchet MS">@@@COD_HORA@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="left"><font color="#000" size="2" face="Trebuchet MS">@@@MARCACOES@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="center"><font color="#000" size="2" face="Trebuchet MS">@@@FALTAS@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="center"><font color="#000" size="2" face="Trebuchet MS">@@@EXCEDENTE@@@</font></div></td>
+					<td style="padding:3px" width="" nowrap ><div align="center"><font color="#000" size="2" face="Trebuchet MS">@@@ATRASOS@@@</font></div></td>
+					
+					<form action="updateObs.asp" method="post">
+						<td width="" nowrap >
+							<input name="data" type="hidden" value="@@@DATA@@@"/>
+							<input name="id" type="hidden" value="@@@ID@@@"/>
+							<input size="35" name="obs" value="@@@OBS@@@" type="text" style="border:none; padding-left:5"/>
+							<input id="noprint" type="submit" value="Salvar"/>
+						</td>
+					</form>
+					
+				</tr>
